@@ -103,3 +103,25 @@ footer {
   font-weight: 300;
   padding: 0.5rem;
 }
+
+@media (max-width: 800px) {
+  main {
+    width: 100%;
+  }
+
+  .header-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    margin-top: -40px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .headline {
+    width: 100%;
+  }
+}
