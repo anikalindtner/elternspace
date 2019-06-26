@@ -1,21 +1,101 @@
-main{
-  margin: 0 auto;
-  width: 600px;
+body {
+  display: grid;
 
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  grid-template-areas:
+    "main"
+    "footer";
+
+  grid-template-rows: 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;
 }
 
-.tinyletter {
-  padding-top: 1rem;
-  font-size: 0.8rem;
+main {
+  grid-area: main;
+  margin: 0 auto;
+  width: 800px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 input {
   font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .header-img {
-  width: 600px;
+  width: 800px;
   text-align: center;
+}
+
+.subscribe-form {
+  margin-top: -140px;
+  margin-left: 260px;
+  width: 325px;
+}
+
+.headline {
+  font-size: 2.2rem;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0;
+  width: 250px;
+}
+
+.email,
+.submit {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+.email {
+  border: 1px solid lightgray;
+  margin-right: 1rem;
+  width: 250px;
+}
+
+.submit {
+  background-color: #dfdfdf;
+  /**
+     * If the input field has a border,
+     * you need it here too to achieve equal heights.
+     */
+  border: 1px solid transparent;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+.submit::-moz-focus-inner {
+  border: 0;
+}
+
+.formgroup {
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.text {
+  margin-top: 0;
+  font-style: normal;
+  color: #323232;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+
+footer {
+  grid-area: footer;
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
 }
